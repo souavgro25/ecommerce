@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <link rel="stylesheet" href="./index.css" />
+    <title>ecommerce</title>
+  </head>
+  <body>
+    <div id="show" class="md:hidden">
+        <i class=" text-blue-600 fas fa-align-justify fa-2x ml-5 my-2"></i>
+    </div>
+    <div class="hidden md:flex justify-around bg-white header-first py-2">
+      <div class="flex gap-2">
+          
+        <div>
+          <p>Home</p>
+        </div>
+        <div>
+          <p>About Us</p>
+        </div>
+        <div>
+          <p>Contact</p>
+        </div>
+        <div>
+          <p>FAQ</p>
+        </div>
+      </div>
+      <div>
+        <p>US Dollar</p>
+      </div>
+      <div class="flex gap-2">
+        <div>
+          <p>more menus</p>
+        </div>
+        <div>
+          <p>Delivery</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- header  -->
+
+    <header
+      style="background-color: whitesmoke"
+      class="flex flex-wrap justify-around py-8 items-center"
+    >
+      <h2 class="font-bold text-3xl font-serif">JOURNAL</h2>
+      <form class="flex" >
+        <select class="bg-blue-600 text-white py-3 px-2 rounded-l" name="" id="">
+          <option value="">all</option>
+          <option value="">new</option>
+        </select>
+        <input class="input px-2 md:px-5" type="text" placeholder="Search here " />
+        <button class="rounded-r bg-blue-600 text-white px-5"><i class="fas fa-search"></i></button>
+      </form>
+      <div class="hidden md:flex gap-2">
+        <div class=" flex flex-col items-center ">
+            <i class="fas fa-user"></i>
+          <p>sign in</p>
+        </div>
+        <div class=" flex flex-col items-center ">
+            <i class="far fa-address-card"></i>
+          <p>Register</p>
+        </div>
+        <div class=" flex flex-col items-center ">
+            <i class="far fa-heart"></i>
+          <p>wishlist</p>
+        </div>
+        <div class=" flex flex-col items-center ">
+            <i class="fas fa-sliders-h"></i>
+          <p>Compare</p>
+        </div>
+      </div>
+      <div class="hidden md:flex">
+        <p>0 items - $0.00</p>
+        <div><i class="fas fa-cart-plus fa-lg ml-2 text-blue-600"></i></div>
+      </div>
+    </header>
+
+    <!-- feature -->
+
+    <section class="flex overflow-x-auto  bg-blue-600 md:justify-between px-5 items-center">
+      <div class="flex text-white md:gap-x-5">
+        <p class="bg-yellow-300 text-black font-medium py-3 pr-5 pl-3">
+          Departments
+        </p>
+        <p class="py-3 pr-5 pl-3">Multilevel</p>
+        <p class="py-3 pr-5 pl-3">Mega</p>
+        <p class="py-3 pr-5 pl-3">Width</p>
+      </div>
+      <div class="flex items-center text-white gap-x-4">
+        <i class="fas fa-phone-alt"></i>
+        <p class="py-3">0111-9637868</p>
+        <divc class="flex items-center text-black  gap-x-2 bg-yellow-300 ">
+            <i class="far fa-comment-alt fa-lg ml-2 "></i>
+          <p class="text-black font-medium py-3 px-2">Blog</p>
+        </div>
+      </div>
+    </section>
+    <!-- hero -->
+
+    <section
+      class="grid md:grid-rows-1 grid-rows-2 md:grid-cols-4 gap-4 mx-5 mt-5"
+    >
+      <div
+      style="background-color: #181b1e;"
+        class="flex col-span-3 justify-between items-center rounded"
+      >
+        <div class="flex flex-col gap-y-5 items-start ml-5 md:ml-10">
+          <button class="bg-blue-600 px-2 py-1 text-white rounded">
+            new arrivals
+          </button>
+          <p class="text-xl md:text-3xl text-white font-bold max-w-sm">
+            Sound that goes straight to your heart
+          </p>
+          <button
+            class="
+              text-white
+              bg-gray-500
+              font-medium
+              px-3
+              text-md
+              border border-white
+              py-2
+              rounded
+            "
+          >
+            shop Now
+          </button>
+        </div>
+        <img
+          class="h-60 md:h-full rounded-r"
+          src="https://images.unsplash.com/photo-1520170350707-b2da59970118?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=401&q=80"
+          alt=""
+        />
+      </div>
+      <div class="col-span-1 ">
+        <div class="flex md:flex-col gap-y-4 gap-x-2 ">
+          <div class="bg-gray-100 flex justify-between items-center rounded ">
+            <div class="ml-5">
+              <p class="text-blue-600 font-bold font-sans">smart looks</p>
+              <p class="max-w-xs text-balck font-bold">
+                itelligent and durable design
+              </p>
+            </div>
+            <img
+              class="h-36 md:h-60 "
+              src="https://images.unsplash.com/photo-1583394838336-acd977736f90?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=331&q=80"
+              alt=""
+            />
+          </div>
+          <div class="flex flex-col gap-y-4">
+            <div class="bg-gray-100 flex justify-between items-center rounded">
+              <div class="ml-5">
+                <p class="text-blue-600 font-bold font-sans">smart looks</p>
+                <p class="max-w-xs text-balck font-bold">
+                  itelligent and durable design
+                </p>
+              </div>
+              <img
+                class="h-36 md:h-60"
+                src="https://images.unsplash.com/photo-1583394838336-acd977736f90?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=331&q=80"
+                alt=""
+              />
+            </div>
+
+         
+        </div>
+      </div>
+      </div>
+    </section>
+    <section
+      class="flex flex-wrap justify-around mt-5 text-white py-5 bg-gray-900 gap-y-4"
+    >
+      <!-- Featured -->
+        <div class="flex items-center gap-x-2">
+            <i class="fas fa-cube fa-2x text-yellow-600"></i>
+            <div>
+                <p class="font-bold">free shipping</p>
+                <p class="text-gray-400 text-sm">free home delivery</p>
+              </div>
+
+        </div>
+ 
+        <div class="flex items-center gap-x-2">
+            <i class="fas fa-money-check  fa-2x text-yellow-600"></i>
+            <div>
+                <p class="font-bold">free Returs</p>
+                <p class="text-gray-400 text-sm">free returns </p>
+              </div>
+        </div>
+      <div class="flex items-center gap-x-2">
+        <i class="fas fa-shopping-cart fa-2x text-yellow-600 "></i>
+        <div>
+            <p class="font-bold">secure shoping</p>
+            <p class="text-gray-400 text-sm">all  secure</p>
+          </div>
+      </div>
+      <div class="flex items-center gap-x-2">
+        <i class="fas fa-store-slash  fa-2x text-yellow-600 "></i>
+        <div>
+            <p class="font-bold">unlimited blocks</p>
+            <p class="text-gray-400 text-sm">any content</p>
+          </div>
+      </div>
+      
+    </section>
+
+    <!-- why buy from us  -->
+    <div class="flex flex-col items-center mt-10">
+      <h1 class="text-black font-bold text-2xl">Why buy from us?</h1>
+      <p class="text-gray-500 text-sm max-w-sm md:max-w-xl mt-5 text-center">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia magnam ab
+        facilis sint eius distinctio?lorem10 Lorem ipsum dolor sit, amet
+        consectetur adipisicing elit. Sunt maiores minus nobis nihil laborum
+        labore!
+      </p>
+    </div>
+
+    <section class="flex flex-col items-center mt-10">
+      <div class="flex gap-x-2 bg-gray-100 text-black">
+        <p class="cursor-pointer bg-blue-600 px-2 py-1 text-white">
+          Top category
+        </p>
+        <p class="cursor-pointer hover:bg-blue-600 px-2 py-1 hover:text-white">
+          electronics
+        </p>
+        <p class="cursor-pointer hover:bg-blue-600 px-2 py-1 hover:text-white">
+          Beauty
+        </p>
+        <p class="cursor-pointer hover:bg-blue-600 px-2 py-1 hover:text-white">
+          Fashions
+        </p>
+      </div>
+      <div class="flex mt-10 gap-x-4 overflow-x-scroll flex-nowrap ml-5 ">
+        <div class="relative flex-none">
+          <img
+            class="h-60 w-60"
+            src="https://images.unsplash.com/photo-1577174881658-0f30ed549adc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=362&q=80"
+            alt=""
+          />
+          <div class="flex justify-center items-end absolute inset-0 ">
+            <p class="bg-white rounded px-5 py-1 text-black">fashion</p>
+          </div>
+        </div>
+        <div class="relative flex-none">
+            <img
+              class="h-60 w-60"
+              src="https://images.unsplash.com/photo-1577174881658-0f30ed549adc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=362&q=80"
+              alt=""
+            />
+            <div class="flex justify-center items-end absolute inset-0 ">
+              <p class="bg-white rounded px-5 py-1 text-black">fashion</p>
+            </div>
+          </div>
+          <div class="relative flex-none">
+            <img
+              class="h-60 w-60"
+              src="https://images.unsplash.com/photo-1577174881658-0f30ed549adc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=362&q=80"
+              alt=""
+            />
+            <div class="flex justify-center items-end absolute inset-0 ">
+              <p class="bg-white rounded px-5 py-1 text-black">fashion</p>
+            </div>
+          </div>
+          <div class="relative flex-none">
+            <img
+              class="h-60 w-60"
+              src="https://images.unsplash.com/photo-1577174881658-0f30ed549adc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=362&q=80"
+              alt=""
+            />
+            <div class="flex justify-center items-end absolute inset-0 ">
+              <p class="bg-white rounded px-5 py-1 text-black">fashion</p>
+            </div>
+          </div>
+          <div class="relative flex-none">
+            <img
+              class="h-60 w-60"
+              src="https://images.unsplash.com/photo-1577174881658-0f30ed549adc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=362&q=80"
+              alt=""
+            />
+            <div class="flex justify-center items-end absolute inset-0 ">
+              <p class="bg-white rounded px-5 py-1 text-black">fashion</p>
+            </div>
+          </div>
+
+      </div>
+
+
+      <!-- product section  -->
+<section class="container bg-gray-100 mt-10">
+
+
+      <div class="flex flex-col items-center mt-10 ">
+        <h1 class="text-black font-bold text-2xl">Featured Product</h1>
+        <p class="text-gray-500 text-sm max-w-sm md:max-w-xl mt-5 text-center">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia magnam ab
+          facilis sint eius distinctio?lorem10 Lorem ipsum dolor sit, amet
+          consectetur adipisicing elit. Sunt maiores minus nobis nihil laborum
+          labore!
+        </p>
+      </div>
+  
+      <section class="flex flex-col items-center mt-10">
+        <div class="flex gap-x-2 bg-gray-200 text-black">
+          <p class="cursor-pointer bg-blue-600 px-2 py-1 text-white">
+            Featured 
+          </p>
+          <p class="cursor-pointer hover:bg-blue-600 px-2 py-1 hover:text-white">
+          Latest
+          </p>
+          <p class="cursor-pointer hover:bg-blue-600 px-2 py-1 hover:text-white">
+            BestSeller
+          </p>
+          <p class="cursor-pointer hover:bg-blue-600 px-2 py-1 hover:text-white">
+            Specials
+          </p>
+        </div>
+        <div class="flex mt-10 gap-x-4 overflow-x-auto mb-10 ml-5">
+          <div class="relative flex-none">
+            <img
+              class="h-60 w-80 rounded-md"
+              src="https://images.unsplash.com/photo-1600086827875-a63b01f1335c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=667&q=80"
+              alt=""
+            />
+            <div class="flex justify-center items-end absolute inset-0 ">
+              <p class="bg-blue-400 rounded px-10 py-1 text-white hover:bg-blue-600 cursor-pointer">shop</p>
+            </div>
+            <div class=" bg-white  rounded-r flex-col gap-y-4 flex justify-center items-end absolute bottom-10 ">
+                <div class="px-1">
+                    <span class="fa fa-star text-yellow-300"></span>
+                    <span class="fa fa-star text-yellow-300"></span>
+                    <span class="fa fa-star text-yellow-300"></span>
+                    <span class="fa fa-star text-yellow-300"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <p class="px-2 py-1 font-bold">price: <span class="text-gray-500">100$</span></p>
+              </div>
+            <div class="absolute top-0 right-0 px-2 py-1 bg-yellow-300 rounded-md">
+                <p>sale</p>
+              </div>
+          </div>
+          <div class="relative flex-none">
+            <img
+              class="h-60 w-80 rounded-md"
+              src="https://images.unsplash.com/photo-1600086827875-a63b01f1335c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=667&q=80"
+              alt=""
+            />
+            <div class="flex justify-center items-end absolute inset-0 ">
+              <p class="bg-blue-400 rounded px-10 py-1 text-white hover:bg-blue-600 cursor-pointer">shop</p>
+            </div>
+            <div class=" bg-white  rounded-r flex-col gap-y-4 flex justify-center items-end absolute bottom-10 ">
+                <div class="px-1">
+                    <span class="fa fa-star text-yellow-300"></span>
+                    <span class="fa fa-star text-yellow-300"></span>
+                    <span class="fa fa-star text-yellow-300"></span>
+                    <span class="fa fa-star text-yellow-300"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <p class="px-2 py-1 font-bold">price: <span class="text-gray-500">100$</span></p>
+              </div>
+            <div class="absolute top-0 right-0 px-2 py-1 bg-yellow-300 rounded-md">
+                <p>sale</p>
+              </div>
+          </div>
+          <div class="relative flex-none">
+            <img
+              class="h-60 w-80 rounded-md"
+              src="https://images.unsplash.com/photo-1600086827875-a63b01f1335c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=667&q=80"
+              alt=""
+            />
+            <div class="flex justify-center items-end absolute inset-0 ">
+              <p class="bg-blue-400 rounded px-10 py-1 text-white hover:bg-blue-600 cursor-pointer">shop</p>
+            </div>
+            <div class=" bg-white  rounded-r flex-col gap-y-4 flex justify-center items-end absolute bottom-10 ">
+                <div class="px-1">
+                    <span class="fa fa-star text-yellow-300"></span>
+                    <span class="fa fa-star text-yellow-300"></span>
+                    <span class="fa fa-star text-yellow-300"></span>
+                    <span class="fa fa-star text-yellow-300"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <p class="px-2 py-1 font-bold">price: <span class="text-gray-500">100$</span></p>
+              </div>
+            <div class="absolute top-0 right-0 px-2 py-1 bg-yellow-300 rounded-md">
+                <p>sale</p>
+              </div>
+          </div>
+          <div class="relative flex-none">
+            <img
+              class="h-60 w-80 rounded-md"
+              src="https://images.unsplash.com/photo-1600086827875-a63b01f1335c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=667&q=80"
+              alt=""
+            />
+            <div class="flex justify-center items-end absolute inset-0 ">
+              <p class="bg-blue-400 rounded px-10 py-1 text-white hover:bg-blue-600 cursor-pointer">shop</p>
+            </div>
+            <div class=" bg-white  rounded-r flex-col gap-y-4 flex justify-center items-end absolute bottom-10 ">
+                <div class="px-1">
+                    <span class="fa fa-star text-yellow-300"></span>
+                    <span class="fa fa-star text-yellow-300"></span>
+                    <span class="fa fa-star text-yellow-300"></span>
+                    <span class="fa fa-star text-yellow-300"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <p class="px-2 py-1 font-bold">price: <span class="text-gray-500">100$</span></p>
+              </div>
+            <div class="absolute top-0 right-0 px-2 py-1 bg-yellow-300 rounded-md">
+                <p>sale</p>
+              </div>
+          </div>
+          </div>
+        </div>
+    </section>
+
+    <section id="navbar" class="hidden fixed inset-0 md:hidden">
+        <div  id="close" class="bg-white pt-10 pl-10 text-3xl "><i class="fas fa-times fa-x text-blue-600"></i></div>
+        <div class="flex flex-col gap-y-10 bg-white justify-center  h-screen">
+            <div class="flex flex-col items-center text-black text-3xl gap-y-5 font-medium">
+                <p>Home</p>
+                <p>About us</p>
+                <p>Contact us</p>
+                <p>FAQ</p>
+                <p>wishlist</p>
+    
+            </div>
+            <div class="flex font-bold justify-center text-black text-3xl gap-x-4">
+                <p class="text-blue-600 ">Sign IN </p>
+                <p>Register</p>
+            </div>
+        </div>
+       
+    </section>
+    <section id="sale" class=" fixed inset-10 hidden ">
+        <div  id="closesale" class="bg-white pt-10 pl-10 text-3xl "><i class="fas fa-times fa-x text-gray-600"></i></div>
+        <div class="flex md:flex-row flex-col gap-y-10 bg-white justify-center  ">
+            <div class="flex  items-center text-black text-3xl gap-y-5">
+                <img class="h-35 " src="https://images.unsplash.com/photo-1600086827875-a63b01f1335c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=667&q=80" alt="">
+    
+            </div>
+            <div class="flex flex-col items-center justify-center ">
+                 <p class=" text-yellow-300 md:text-5xl text-2xl font-bold"> !hurry sale end in 5 days  </p>
+                <div class=" mt-5 flex justify-center text-black text-3xl gap-x-4">
+                    <p class="font-bold   text-blue-600">Sign IN </p>
+                    <p class="font-bold ">Register</p>
+                </div>
+            </div>
+            
+        </div>
+       
+    </section>
+    </section>
+  </body>
+  <script src="./index.js"></script>
+</html>
